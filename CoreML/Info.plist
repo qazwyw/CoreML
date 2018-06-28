@@ -20,16 +20,16 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>You can use the device's camera to set your avatar, scan a credit card or attach a picture to a review.</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>APP needs your permission to save the picture to your album.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>You can set your avatar or upload a photo for review.</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
-    <key>NSCameraUsageDescription</key>
-    <string>You can use the device's camera to set your avatar, scan a credit card or attach a picture to a review.</string>
-    <key>NSPhotoLibraryAddUsageDescription</key>
-    <string>APP needs your permission to save the picture to your album.</string>
-    <key>NSPhotoLibraryUsageDescription</key>
-    <string>You can set your avatar or upload a photo for review.</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>

@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -32,18 +31,28 @@
                                     <action selector="selectImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NOV-K2-AYY"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="result" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xSg-43-YAm">
+                                <rect key="frame" x="20" y="420" width="335" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xSg-43-YAm" secondAttribute="trailing" constant="20" id="CCw-Ld-5hd"/>
                             <constraint firstItem="vpd-0V-Jdn" firstAttribute="top" secondItem="mRt-rT-TeK" secondAttribute="bottom" constant="50" id="E7K-54-LtR"/>
                             <constraint firstItem="mRt-rT-TeK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="Ng5-kB-Dhb"/>
                             <constraint firstItem="mRt-rT-TeK" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Yf5-5x-fTb"/>
+                            <constraint firstItem="xSg-43-YAm" firstAttribute="top" secondItem="vpd-0V-Jdn" secondAttribute="bottom" constant="20" id="hD9-4g-g83"/>
+                            <constraint firstItem="xSg-43-YAm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="lWG-1A-UQV"/>
                             <constraint firstItem="vpd-0V-Jdn" firstAttribute="centerX" secondItem="mRt-rT-TeK" secondAttribute="centerX" id="zcv-IO-AWq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="photoImageView" destination="mRt-rT-TeK" id="Ud2-ph-E8L"/>
+                        <outlet property="resultLabel" destination="xSg-43-YAm" id="1XH-VH-Ndt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
